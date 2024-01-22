@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- PHOSPHORICONS -->
+	  <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/Favicon.ico"
+    />
+    <title>KopiQuirk | Project UAS</title>
+
+  </head>
+  <body>
+
+    <!--NAVBAR-->
+    <nav>
+      <div class="nav__logo">
+        <img
+          src="assets/Logo.svg"
+          alt="KopiQuirk Logo"
+        />
+        KopiQuirk
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="index.html#Home">Home</a></li>
+        <li class="link"><a href="about.html">About</a></li>
+        <li class="link"><a href="index.html#Features">Features</a></li>
+        <li class="link"><a href="index.html#CoffeeSpot">Coffee Spot</a></li>
+        <li class="link"><a href="index.html#Testimonial">Testimonial</a></li>
+        <li class="link">
+          <a href="index.html#Collaboration">Collaboration</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--HEADER-->
+    <section id="Home">
+    <header class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1>Discover Your Quirky Coffee Adventure</h1>
+          <p>
+            Explore unique coffee shops and hangout spots that match your vibe.
+          </p>
+        </div>
+      </div>
+    </header>
+    </section>
+  
+    <!--==============FEATURES==============-->
+    <section id="Features">
+      <div class="container">
+        <div class="features__item">
+          <i class="ph-circle-wavy-check-fill"></i>
+          <div class="text">
+            <h5>Best Quality</h5>
+            <p>Discover the best in coffee at Kopiquirk -</br> your top destination for premium beans, quality materials, and fast delivery.</br> Unforgettable coffee experiences await</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <i class="ph-coffee-fill"></i>
+          <div class="text">
+            <h5>Best Materials</h5>
+            <p>Indulge in the richness of your favorite brews with Kopiquirk's commitment to using only the finest,</br> ethically sourced materials that redefine your coffee enjoyment</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <i class="ph-clock-fill"></i>
+          <div class="text">
+            <h5>Fast Delivery</h5>
+            <p>Savor the convenience! Kopiquirk ensures your coffee cravings are met swiftly and seamlessly,</br> with our lightning-fast delivery service bringing the perfect brew to your doorstep in no time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==============COFFEE SPOT==============-->
+    <section id="Coffee Spot">
+    <section class="section__container popular__container">
+      <h2 class="section__header">Coffee Spot</h2>
+      <div class="popular__grid">
+        
+        <!-- Card 1 -->
+        <div class="popular__card" id="popup-trigger1">
+          <img src="assets/spot 1/ODS 1.jpg" alt="popular coffee shop" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Ourdstories</h4>
+              <h4>07.30-23.00</h4>
+            </div>
+            <p>Jl. Karimata, No. 64 Kota Pontianak</p>
+          </div>
+        </div>
+
+        <!-- Pop-up 1 -->
+        <div class="popup" id="popup1">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+            <h2>Ourdstories</h2>
+            <img src="assets/spot 1/ODS 1.jpg" alt="popular coffee shop" />
+            <div class="scrollable-images">
+              <img src="assets/spot 1/ODS 2.jpg" alt="Additional Image 1" />
+              <img src="assets/spot 1/ODS 3.jpg" alt="Additional Image 2" />
+              <img src="assets/spot 1/ODS 4.jpg" alt="Additional Image 3" />
+              <img src="assets/spot 1/ODS 5.jpg" alt="Additional Image 4" />
+              <img src="assets/spot 1/ODS 6.jpg" alt="Additional Image 5" />
+              <img src="assets/spot 1/ODS 7.jpg" alt="Additional Image 6" />
+              <img src="assets/spot 1/ODS 8.jpg" alt="Additional Image 7" />
+            </div>
+            <p>OurDStories, tempat di mana setiap cangkir memiliki kisahnya sendiri. Rasakan pesona kafe kami yang hangat dan penuh keceriaan, dihiasi dengan sentuhan vintage yang memikat dan nuansa modern yang mengundang. Dengan suasana yang mengundang untuk berbagi cerita, setiap kunjungan ke OurDStories adalah petualangan rasa dan momen tak terlupakan. Mari bergabung, nikmati vibes kafe yang menginspirasi, dan tuliskan kisah Anda di sini.</p>
+            <button class="action-btn" onclick="order('popup1')">Order Now</button>
+            <button class="action-btn" onclick="reserve('popup1')">Reserve</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="popular__card" id="popup-trigger2">
+          <img src="assets/spot 2/BUCS 1.jpg" alt="popular coffee shop" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Bucs.id</h4>
+              <h4>15.00-23.00</h4>
+            </div>
+            <p>Jl. M. Sohor Komp. Sumatra Indah No. 22 A, Kota Pontianak</p>
+          </div>
+        </div>
+
+        <!-- Pop-up 2 -->
+        <div class="popup" id="popup2">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+            <h2>Bucs.id</h2>
+            <img src="assets/spot 2/BUCS 1.jpg" alt="popular coffee shop" />
+            <div class="scrollable-images">
+              <img src="assets/spot 2/BUCS 2.jpg" alt="Additional Image 1" />
+              <img src="assets/spot 2/BUCS 3.jpg" alt="Additional Image 2" />
+              <img src="assets/spot 2/BUCS 4.jpg" alt="Additional Image 3" />
+              <img src="assets/spot 2/BUCS 5.jpg" alt="Additional Image 4" />
+              <img src="assets/spot 2/BUCS 6.jpg" alt="Additional Image 5" />
+              <img src="assets/spot 2/BUCS 7.jpg" alt="Additional Image 6" />
+              <img src="assets/spot 2/BUCS 8.jpg" alt="Additional Image 7" />
+            </div>
+            <p>Bucs.id, tempat yang penuh semangat dan kehangatan. Nikmati vibes modern dan santai di kafe kami, tempat yang cocok untuk pertemuan kreatif atau sekadar menikmati waktu bersama. Rasakan keunikan Bucs.id, di mana kopi berkualitas bertemu dengan atmosfer yang tak terlupakan.</p>
+            <button class="action-btn" onclick="order('popup2')">Order Now</button>
+            <button class="action-btn" onclick="reserve('popup2')">Reserve</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="popular__card" id="popup-trigger3">
+          <img src="assets/spot 3/FRANCO'S 1.jpg" alt="popular coffee shop" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Francos Coffee</h4>
+              <h4>08.00-23.00</h4>
+            </div>
+            <p>Jl. Teuku Umar, Komplek Pontianak Mall No. B8, Kota Pontianak</p>
+          </div>
+        </div>
+
+        <!-- Pop-up 3 -->
+        <div class="popup" id="popup3">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+            <h2>Francos Coffee</h2>
+            <img src="assets/spot 3/FRANCO'S 1.jpg" alt="popular coffee shop" />
+            <div class="scrollable-images">
+              <img src="assets/spot 3/FRANCO'S 2.jpg" alt="Additional Image 1" />
+              <img src="assets/spot 3/FRANCO'S 3.jpg" alt="Additional Image 2" />
+              <img src="assets/spot 3/FRANCO'S 4.jpg" alt="Additional Image 3" />
+              <img src="assets/spot 3/FRANCO'S 5.jpg" alt="Additional Image 4" />
+              <img src="assets/spot 3/FRANCO'S 6.jpg" alt="Additional Image 5" />
+              <img src="assets/spot 3/FRANCO'S 7.jpg" alt="Additional Image 6" />
+              <img src="assets/spot 3/FRANCO'S 8.jpg" alt="Additional Image 7" />
+            </div>
+            <p>Francos Coffee, tempat di mana aroma kopi memeluk setiap sudut dan senyum hangat menyambut setiap tamu. Di sini, kami hadirkan suasana yang penuh kehangatan, ditemani dengan vibes yang mengundang untuk berdiam sejenak. Rasakan kesempurnaan momen dengan kopi berkualitas tinggi dan dekorasi yang memberikan sentuhan keakraban. </p>
+            <button class="action-btn" onclick="order('popup3')">Order Now</button>
+            <button class="action-btn" onclick="reserve('popup3')">Reserve</button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="popular__card" id="popup-trigger4">
+          <img src="assets/spot 4/FEELING 1.jpg" alt="popular coffee shop" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Feeling Coffee</h4>
+              <h4>08.00-23.00</h4>
+            </div>
+            <p>JI. Karya Bhakti No. 7, Kota Pontianak</p>
+          </div>
+        </div>
+
+        <!-- Pop-up 4 -->
+        <div class="popup" id="popup4">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup4')">&times;</span>
+            <h2>Feeling Coffee</h2>
+            <img src="assets/spot 4/FEELING 1.jpg " alt="popular coffee shop" />
+            <div class="scrollable-images">
+              <img src="assets/spot 4/FEELING 2.jpg" alt="Additional Image 1" />
+              <img src="assets/spot 4/FEELING 3.jpg" alt="Additional Image 2" />
+              <img src="assets/spot 4/FEELING 4.jpg" alt="Additional Image 3" />
+              <img src="assets/spot 4/FEELING 5.jpg" alt="Additional Image 4" />
+              <img src="assets/spot 4/FEELING 6.jpg" alt="Additional Image 5" />
+              <img src="assets/spot 4/FEELING 7.jpg" alt="Additional Image 6" />
+              <img src="assets/spot 4/FEELING 8.jpg" alt="Additional Image 7" />
+            </div>
+            <p>Feeling Coffee, tempat di mana setiap tegukan adalah perjalanan rasa dan setiap sudut menciptakan kenangan. Suasana hangat dan ramah kami, dipadu dengan vibes yang penuh keceriaan, mengundang Anda untuk menikmati kopi berkualitas tinggi sambil merasakan kelezatan momen santai. Temukan harmoni dalam setiap cangkir di Feeling Coffee, tempat di mana kopi bertemu dengan atmosfer yang menyenangkan.</p>
+            <button class="action-btn" onclick="order('popup4')">Order Now</button>
+            <button class="action-btn" onclick="reserve('popup4')">Reserve</button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="popular__card" id="popup-trigger5">
+          <img src="assets/spot 5/SDPNT 1.jpg" alt="popular coffee shop" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Sedap Nikmat</h4>
+              <h4>06.00-23.00</h4>
+            </div>
+            <p>Jl. Jendral Sudirman, Blok O, No. 1-2, Kota Pontianak</p>
+          </div>
+        </div>
+
+        <!-- Pop-up 5 -->
+        <div class="popup" id="popup5">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup5')">&times;</span>
+            <h2>Sedap Nikmat</h2>
+            <img src="assets/spot 5/SDPNT 1.jpg" alt="popular coffee shop" />
+            <div class="scrollable-images">
+              <img src="assets/spot 5/SDPNT 2.jpg" alt="Additional Image 1" />
+              <img src="assets/spot 5/SDPNT 3.jpg" alt="Additional Image 2" />
+              <img src="assets/spot 5/SDPNT 4.jpg" alt="Additional Image 3" />
+              <img src="assets/spot 5/SDPNT 5.jpg" alt="Additional Image 4" />
+              <img src="assets/spot 5/SDPNT 6.jpg" alt="Additional Image 5" />
+              <img src="assets/spot 5/SDPNT 7.jpg" alt="Additional Image 6" />
+              <img src="assets/spot 5/SDPNT 8.jpg" alt="Additional Image 7" />
+            </div>
+            <p>Sedap Nikmat, tempat di mana setiap sudut menciptakan kisah rasa yang tak terlupakan. Suasana hangat dan welcoming di kafe kami, dipenuhi dengan vibes yang mengundang untuk bersantai dan menikmati. Rasakan kenikmatan tiap tegukan kopi yang berkualitas tinggi sambil menikmati atmosfer yang nyaman. Sedap Nikmat bukan hanya tempat untuk menikmati hidangan lezat, tapi juga destinasi untuk menciptakan momen-momen istimewa.</p>
+            <button class="action-btn" onclick="order('popup5')">Order Now</button>
+            <button class="action-btn" onclick="reserve('popup5')">Reserve</button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="popular__card" id="popup-trigger6">
+          <img src="assets/spot 6/OSAMU 1.jpg" alt="popular coffee shop" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Osamu Coffee</h4>
+              <h4>09-23.00</h4>
+            </div>
+            <p>Jl. Kesehatan No. 61, Kota Pontianak</p>
+          </div>
+        </div>
+
+        <!-- Pop-up 6 -->
+        <div class="popup" id="popup6">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup6')">&times;</span>
+            <h2>Osamu Coffee</h2>
+            <img src="assets/spot 6/OSAMU 1.jpg" alt="popular coffee shop" />
+            <div class="scrollable-images">
+              <!-- Add additional images here -->
+              <img src="assets/spot 6/OSAMU 2.jpg" alt="Additional Image 1" />
+              <img src="assets/spot 6/OSAMU 3.jpg" alt="Additional Image 2" />
+              <img src="assets/spot 6/OSAMU 4.jpg" alt="Additional Image 3" />
+              <img src="assets/spot 6/OSAMU 5.jpg" alt="Additional Image 4" />
+              <img src="assets/spot 6/OSAMU 6.jpg" alt="Additional Image 5" />
+              <img src="assets/spot 6/OSAMU 7.jpg" alt="Additional Image 6" />
+              <img src="assets/spot 6/OSAMU 8.jpg" alt="Additional Image 7" />
+            </div>
+            <p>Osamu Coffee, di mana kehangatan dan keindahan bertemu dalam setiap cangkir. Suasana tenang dan vibes yang berkelas di kafe kami menciptakan ruang yang sempurna untuk menikmati kopi berkualitas tinggi. Rasakan keajaiban setiap momen di Osamu Coffee, tempat di mana ketenangan bertemu dengan cita rasa yang tak terlupakan. Mari sambut suasana yang elegan dan kopi yang mendalam di Osamu Coffee.</p>
+            <button class="action-btn" onclick="order('popup6')">Order Now</button>
+            <button class="action-btn" onclick="reserve('popup6')">Reserve</button>
+          </div>
+        </div>
+
+        <div class="arrow-buttons">
+          <button class="arrow-button" onclick="prevSlide()">&#8249;</button>
+          <button class="arrow-button" onclick="nextSlide()">&#8250;</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      let currentIndex = 0;
+      const cards = document.querySelectorAll('.popular__card');
+      const cardsPerPage = 3;
+    
+      function showSlides() {
+        for (let i = 0; i < cards.length; i++) {
+          if (i >= currentIndex && i < currentIndex + cardsPerPage) {
+            cards[i].style.display = 'block';
+          } else {
+            cards[i].style.display = 'none';
+          }
+        }
+      }
+    
+      function prevSlide() {
+        currentIndex -= cardsPerPage;
+        if (currentIndex < 0) {
+          currentIndex = 0;
+        }
+        showSlides();
+      }
+    
+      function nextSlide() {
+        currentIndex += cardsPerPage;
+        if (currentIndex >= cards.length) {
+          currentIndex = 0;
+        }
+        showSlides();
+      }
+    
+      // Show the initial slides
+      showSlides();
+    </script>
+
+    <!--==============TESTIMONIAL==============-->
+    <section id="Testimonial">
+    <section class="client">
+      <div class="section__container client__container">
+        <h2 class="section__header">Testimonial</h2>
+        <div class="client__grid">
+          <div class="client__card">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="client" />
+            <p>
+              "Sangat puas dengan rekomendasi tempat ngopi di website ini! Mudah
+              menemukan tempat cozy dengan ulasan pengguna yang membantu. Terima
+              kasih!"
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="client" />
+            <p>
+              "Website ini membantu saya temukan tempat ngopi unik. Filter dan
+              ulasan pengguna sangat berguna. Sangat direkomendasikan untuk
+              pencinta kopi!"
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="client" />
+            <p>
+              "Website ini selamatkan hari saya! Mudah cari tempat ngopi dengan
+              informasi lengkap. Terima kasih atas kemudahannya!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==============COLLABORATION==============-->
+    <section id="Collaboration">
+      <section class="section__container">
+        <div class="reward__container">
+          <p>50+ coffee shops have partnered with us</p>
+          <h4>To feature your shop on our website, please click the following link to explore collaboration</h4>
+          <a href="https://www.instagram.com/raanggasa_" target="_blank">
+            <i class="ph-fill ph-instagram-logo"></i>
+          </a>
+          <a href="mailto:rangga123ptk@email.com">
+            <i class="ph-fill ph-envelope"></i>
+          </a>
+          <a href="https://wa.me/+6285245578625" target="_blank">
+            <i class="ph-fill ph-whatsapp-logo"></i>
+          </a>
+        </div>
+      </section>
+    </section>
+
+
+    <!--==============FOOTER==============-->
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>KopiQuirk</h3>
+          <p>
+            KopiQuirk is a premier coffee shop recomendation website that offers a seamless and
+            convenient way to find and book accommodations worldwide.
+          </p>
+          <p>
+            With a user-friendly interface and a vast selection of coffee spot,
+            KopiQuirk aims to provide a stress-free experience for travelers
+            seeking the perfect stay.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <p>About Us</p>
+          <p>Our Team</p>
+          <p>Blog</p>
+          <p>Book</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <p>FAQs</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <p>Social Media</p>
+          <p>Help Center</p>
+          <p>Partnerships</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 KopiQuirk
+      </div>
+    </footer>
+
+    <!--==============SCROOL TO TOP BUTTON==============-->
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+
+    <!--==============SCRIPT JAVASCRIPT==============-->
+    <script src="main.js"></script>
+
+  </body>
+</html>
